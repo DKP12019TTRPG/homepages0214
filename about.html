@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; base-uri 'none'; form-action 'none';">
+    <title>規約・概要 - DKPの倉庫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 900: '#0c4a6e' },
+                        slate: { 850: '#151e2e', 900: '#0f172a' }
+                    },
+                    fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 transition-colors duration-300 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-stone-50/80 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html"
+                        class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 hover:opacity-80 transition">
+                        DKPの倉庫
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-stone-600 hover:text-primary-600 font-medium transition">ホーム</a>
+                    <a href="#" class="text-primary-600 font-bold transition" aria-current="page">規約・概要</a>
+                    <a href="tools/index.html"
+                        class="text-stone-600 hover:text-primary-600 font-medium transition">ツール</a>
+                    <a href="scenarios/index.html"
+                        class="text-stone-600 hover:text-primary-600 font-medium transition">シナリオ</a>
+                    <a href="articles/index.html"
+                        class="text-stone-600 hover:text-primary-600 font-medium transition">雑記</a>
+                    <a href="doujinshi/index.html"
+                        class="text-stone-600 hover:text-primary-600 font-medium transition">同人誌</a>
+                    <a href="materials/index.html"
+                        class="text-stone-600 hover:text-primary-600 font-medium transition">配布物</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-stone-200 transition">
+                        <svg class="w-6 h-6 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html#tools"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">ツール</a>
+                <a href="index.html#scenarios"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">シナリオ</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-bold text-blue-600 bg-blue-50">規約・概要</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+        <h1 class="text-3xl font-extrabold text-stone-900 mb-8 border-b-2 border-primary-500 pb-2 inline-block">
+            規約・概要</h1>
+
+        <div class="space-y-12">
+            <!-- About Site -->
+            <section class="bg-white p-8 rounded-lg shadow-sm border border-stone-200">
+                <h2 class="text-xl font-bold text-stone-900 mb-4 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-primary-500 rounded-full"></span>
+                    本サイトについて
+                </h2>
+                <div class="prose max-w-none text-stone-600">
+                    <p>
+                        当サイトは、TRPG『ソード・ワールド2.5』のセッションをより楽しむための非公式支援ツールや、オリジナルのシナリオデータを公開・配布する個人運営のファンサイトです。
+                    </p>
+                    <p class="mt-4">
+                        提供しているツールは全てクライアントサイド（お使いのブラウザ上）で動作します。作成したデータがサーバーに送信されたり、保存されたりすることはありませんので、安心してご利用ください。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Terms of Use -->
+            <section class="bg-white p-8 rounded-lg shadow-sm border border-stone-200">
+                <h2 class="text-xl font-bold text-stone-900 mb-4 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-emerald-500 rounded-full"></span>
+                    利用規約
+                </h2>
+                <div class="space-y-4 text-stone-600">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>当サイトのツール・シナリオは、個人的な利用の範囲内であれば自由にご使用いただけます。</li>
+                        <li>動画配信やリプレイ動画への使用も問題ありません。その際は、事後で構いませんのでサイトURLなどを概要欄に記載していただけると励みになります（必須ではありません）。</li>
+                        <li>当サイトのコンテンツの再配布、自作発言、販売行為は禁止します。</li>
+                        <li>当サイトを利用したことによって生じたいかなる損害についても、管理人は一切の責任を負いません。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="bg-white p-8 rounded-lg shadow-sm border border-stone-200">
+                <h2 class="text-xl font-bold text-stone-900 mb-4 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-purple-500 rounded-full"></span>
+                    連絡先
+                </h2>
+                <div class="prose max-w-none text-stone-600">
+                    <p>
+                        当サイトに関するお問い合わせは、以下のメールアドレスまでお願いいたします。
+                    </p>
+                    <p class="mt-4 font-mono bg-stone-100 p-4 rounded border border-stone-200">
+                        aconium.lycoctoum【at】gmail.com
+                    </p>
+                    <p class="mt-2 text-sm text-gray-400">
+                        ※スパム対策のため「@」を「【at】」と表記しています。送信の際は「@」に書き換えてください。
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-stone-300 mt-auto">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-lg font-bold mb-4 text-white">DKPの倉庫</h3>
+                <p class="text-sm text-stone-400">
+                    DKPが作成したシナリオやツールを公開しています。
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4 text-white">Links</h3>
+                <ul class="space-y-2 text-sm text-stone-400">
+                    <li><a href="index.html" class="hover:text-white transition">トップページ</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">利用規約・概要</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4 text-white">Social</h3>
+                <ul class="space-y-2 text-sm text-stone-400">
+                    <li><a href="https://x.com/DKP71603706?s=20" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-white transition">X (Twitter)</a></li>
+                    <li><a href="https://dkptrpg.booth.pm/" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-white transition">BOOTH</a></li>
+                    <li><a href="https://www.pixiv.net/users/36182460" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-white transition">Pixiv</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+            <div class="border-t border-stone-700 pt-8">
+                <h3 class="text-lg font-bold mb-4 text-white">Contact</h3>
+                <p class="text-sm text-stone-400">
+                    aconium.lycoctoum【at】gmail.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
